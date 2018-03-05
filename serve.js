@@ -2,9 +2,7 @@ const express = require('express');
 const graphqlHTTP = require('express-graphql');
 const app = express();
 
-// is what contains the types and information for how to get data
-
-const schema = require('./schema')
+const schema = require('./schema')// is what contains the types and information for how to get data
 
 app.use('/graphql', graphqlHTTP({
     schema,
